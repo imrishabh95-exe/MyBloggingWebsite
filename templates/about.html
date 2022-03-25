@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/about.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock head %}
+{% block title %}About Us{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0 about-body" >
+    <div class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Meet Our Team</h2>
+            </div>
+            <div class="row people d-flex justify-content-center">
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box rounded" style="background-image:url(/static/MyOwn/MyPic.jpg)">
+                        <div class="cover">
+                            <h3 class="name">Rishabh Agnihotri</h3>
+                            <p class="title">Django Developer</p>
+                            <div class="social"><a href="https://www.linkedin.com/in/imrishabhh95"><i class="fa fa-linkedin"></i></a><a href="#"><i
+                                        class="fa fa-facebook"></i></a><a href="https://www.instagram.com/imrisab/"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
