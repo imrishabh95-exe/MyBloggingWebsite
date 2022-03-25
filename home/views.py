@@ -14,12 +14,14 @@ def index(request):
     }
     return render(request, 'index.html', args)
 
-def services(request):
+def services(request, page):
     #return HttpResponse("This is services page")
+    page = page[0].upper() + page[1:]
     args = {
         'theme' : 'dark',
         #'theme' : 'light',
         'variable' : 'This is sent',
+        "page"     : page,
     }
     return render(request, 'services.html', args)
 

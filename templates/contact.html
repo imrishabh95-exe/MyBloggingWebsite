@@ -15,7 +15,6 @@
         {% csrf_token %}
         <div class="container" style="max-width: 550px;">
             <form method="post" action="/contact">
-                {% csrf_token %}
                 <div class="form-group my-3">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
